@@ -24,7 +24,7 @@ npm install
 
 1) All assets are built with Prepros. You could definitely integrate the assets building in the gulp pipeline. I find it easier with Prepros :) All assets are built from themes/themename/assets to themes/themename/static.
 2) All images should be put in the themes/themename/source-images folder. The gulp pipeline will build different folder for our images (with different sizes) in themes/themename/static. I recommend keeping all images directly the sources-images folder, so that they will all be available in the Netlify CMS media center. 
-3) You can find a lot of basic information to fill in the data/settings.yml
+3) You can find a lot of basic information to fill in the data/settings.yml. Please make sure that your themes/themename/layout/partials/head/metadata-schemaorg.html outputs correctly :)
 4) Setup in the content folder is made thinking about Netlify CMS integration. All my singles pages that are directly on the root (/a-propos, /contact) are in singles. The "identifiant" is always the same as the name of the file. This is to help saving the file with Netlify CMS.
 5) You can create redirects for your Netlify Hosting using the static/\_redirects file
 6) Once hitting the production (HURRAY), you can use the "gulp build" as the build command. It will clean your images, rebuild them and build the hugo site with a hugo --cleanDestinationDir.
