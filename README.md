@@ -18,7 +18,7 @@ npm install
 
 3) Change the "themename" for your theme's name in config.toml, gulpfile.js, .gitignore, themes/themename, themes/themename/theme.toml, static/admin/config.yml
 
-4) Generate your favicon and place that in the theme/themename/layouts/head/metadata-favicons.html and in static/admin/index.html
+4) Generate your favicon and place that in the theme/themename/layouts/partials/head/metadata-favicons.html and in static/admin/index.html. The image files should go directly into static folder.
 
 ## Using this theme
 
